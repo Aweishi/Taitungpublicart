@@ -1,0 +1,750 @@
+body{
+    color:#707070;
+    letter-spacing:.8px;
+}
+
+
+main{
+    width: 1200px;
+    margin:auto;
+}
+a{
+    text-decoration: none;
+    color: #707070;
+}
+
+input  placeholder{
+    color:blue;
+}
+
+
+
+.font-title{
+    font-size: 1.2em;
+    font-weight: 400;
+}
+.font-date{
+    font-size: .8em;
+    
+}
+
+
+.tag{
+    font-size: .8em;
+    padding: 5px 25px;
+    border: 1px solid #707070;
+    display: inline-block;
+}
+
+.home-content{
+    display: flex;
+    justify-content:space-around;
+    border-bottom: 1px solid #707070;
+    padding: 40px 0;
+}
+.home-news{
+    width: 60%;
+    border-right: 1px solid #A0A0A0;
+}
+.home-link{
+    width: 40%;
+    margin-left: 55px;
+}
+.news-title,.link-title,.declare-title{
+    padding: 20px 0;
+}
+.news-title span,.link-title span{
+    margin-left: 10px;
+}
+.news-list li,.link-list li{
+    margin-bottom: 10px;
+}
+
+.news-list li{
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
+    /* position: relative; */
+    width: 90%;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #707070;
+}
+
+.news-list li:hover .tag{
+    color: #A37B0F;
+    border: 1px solid #A37B0F;
+}
+
+.news-list li:hover {
+    color: #A37B0F;
+}
+
+.news-list li:hover a{
+    color: #A37B0F;
+}
+
+.link-list a:hover{
+    color: #A37B0F;
+}
+
+.work-title{
+   text-align: center;
+   padding: 40px 0;
+}
+.work-title span{
+    margin-left: 10px;
+}
+
+.work-list li{
+    width: 30%; 
+    border: .5px solid #A0A0A0;
+    margin-right: 3%;
+    margin-bottom: 3%;
+}
+
+.work-list img{
+    width: 100%;
+}
+
+.work-list-content{
+    padding: 20px;
+}
+.work-list-content p{
+    font-weight: 300;
+    font-size: .8em;
+    line-height: 1.8;
+}
+.card-title{
+    margin-bottom: 20px;
+}
+
+
+.work-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work-list li:hover{
+    background-color: #DDA54F;
+    transform: scale(1.03);
+    transition: all 0.5s ease 0s;
+}
+
+.work-list li:hover .work-list-content{
+   color: #fff;
+
+}
+
+footer{
+    display: block;
+    height: auto;
+    background-color: #F2F2F2;
+
+}
+
+.ft-content{
+    font-size: .8em;
+    line-height: 1.5;
+    padding: 100px 0;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ft2 span{
+    display: block;
+    text-align: right;
+}
+
+.top-banner{
+    background-image: url(img/top-banner.png);
+    width: 100%;
+    height: 240px;
+    background-size: cover;
+}
+
+
+/* breadcrumb */
+
+.breadcrumb {
+    padding: 50px 0 16px;
+}
+
+.breadcrumb-line {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    font-size: 0.8em;
+}
+
+.breadcrumb-line:before {
+    content: ':::';
+    position: absolute;
+    left: 0;
+    width: 15px;
+    height: 12px;
+}
+
+.breadcrumb-line li a {
+    color: #707070;
+}
+
+.breadcrumb-line li:not(:last-child):after {
+    content: '/';
+    color: #707070;
+    padding: 0 5px;
+}
+
+.breadcrumb-line li:last-child {
+    color: #DDA54F;
+}
+
+.content{
+    background-color:#fff;
+    padding: 0 50px;
+    margin-top: -50px;
+
+}
+
+.content-webcause img,.content-intro img{
+    display: block;
+    margin:30px auto;
+    
+}
+
+.content-webcause p, .content-intro p{
+    line-height: 2;
+    font-weight: 400;
+}
+
+.btn-printer{
+    display: inline-block;
+    float: right;
+    margin-bottom: 40px;
+}
+.clearfix{
+    clear: both;
+}
+.btn-printer:hover{
+    transform: scale(1.03);
+    transition: all 0.5s ease 0s;
+}
+
+.content-law,.content-contact,.content-news{
+    margin-bottom: 40px;
+}
+
+
+.content-law li{
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 1px solid #707070;
+    line-height:1.8;
+}
+.content-law p{
+    margin-left: 130px;
+    width: 80%;
+}
+
+
+
+.content-contact li{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px dashed #707070;
+
+}
+.content-contact img{
+    width: 20px;
+    height: auto;
+    margin: 0 15px;
+}
+
+/* 最新消息 */
+
+.content-news p{
+    line-height:1.8;
+}
+.news-title{
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+
+/* 最新消息列表 */
+
+
+.fullnews-list{
+
+    margin-top: 20px;
+    
+}
+
+.fullnews-list li{
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #707070;
+}
+
+.fullnews-list li:hover .tag{
+    color: #A37B0F;
+    border: 1px solid #A37B0F;
+}
+
+.fullnews-list li:hover {
+    color: #A37B0F;
+}
+
+.fullnews-list li:hover a{
+    color: #A37B0F;
+}
+
+.page-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+   
+    padding-bottom: 20px;
+}
+
+.page-box a.selected {
+    color: #FFF;
+    background-color: #DDA54F;
+    font-weight: 700;
+}
+
+.pagenumber{
+    margin: 0 20px;
+}
+
+.pagenumber a {
+    display: inline-block;
+    color: #A0A0A0;
+    padding: 10px;
+    border: 1px solid #A0A0A0;
+    box-sizing: border-box;
+}
+
+
+/* 公共藝術 */
+
+.publicart-option{
+    display: flex;
+    align-items: center;
+}
+
+.sort{
+    position: relative;
+    display: inline-block;
+    padding: 15px 50px;
+    border: 1px solid #A0A0A0;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.dropdown-content{
+    /* margin-top: 20px; */
+    display: none;
+    position: absolute;
+    top: 75px;
+    /* min-width: 195px; */
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    max-width: 140px;
+    min-width: 10%;  
+    padding: 25px 200px 25px 20px;
+    background-color: #000;
+    line-height: 2;
+}
+
+.dropdown-content a{
+    display: block;
+    color: #FFF;
+    font-size: .8em;
+    font-weight: 300;
+}
+
+.dropdown-content a:hover{
+    color:#DDA54F;
+    font-weight: 700;
+}
+
+.area{
+    display: inline-block;
+    padding: 15px 50px;
+    border: 1px solid #a0a0a0;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+
+
+.keyword-search input{
+    padding: 15px 50px;
+    border: 1px solid #a0a0a0;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-right: 15px;
+}
+
+.btn-search{
+    padding: 15px 50px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #DDA54F;
+    color: #fff;
+}
+
+.dropdown-option a:hover .dropdown-content {
+    display: block;
+}
+
+.data-output{
+    display: inline-block;
+    padding: 15px 50px;
+    border-radius: 5px;
+    margin-left: 100px;
+    background-color: #A0A0A0;
+}
+.data-output a{
+    color: #fff;
+}
+
+.search-list{
+   margin-top: 40px;
+}
+
+/* 作品欣賞列表 */
+
+.select-tag{
+    background-color: #F2F2F2;
+    padding: 20px;
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search-tag{
+    padding:13px 20px;
+    background-color: #fff;
+    display:inline-block;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.search-tag:active{
+    background-color: #DD9933;
+    color: #fff;
+}
+
+.select-tag > .keyword-search input{
+    width: 1000px;
+    padding:13px 20px;
+    margin: 20px 0;
+    border: 0;
+}
+
+.select-tag .dropdown-option{
+
+    display: inline-block;
+    padding: 13px 50px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: #fff;
+}
+
+.hasDatepicker{
+    display: inline-block;
+    padding: 13px 50px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: #fff;
+}
+
+.select-tag button{
+    border: none;
+}
+
+.datapicker{
+    display:flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+/* 作品欣賞路線 */
+
+.route-list{
+    
+    margin-bottom: 40px;
+    display:flex;
+    flex-wrap: wrap;
+}
+.route-list li{
+    width: 30%;
+    margin-right: 3%;
+    position: relative;
+    border: 1px solid #A0A0A0; 
+    margin-bottom: 40px;
+}
+
+.route-list img{
+    
+    width: 100%;
+    display: block;
+}
+
+.route-content{
+    padding:20px;
+}
+
+.route-content p{
+    font-weight: 300;
+    font-size: .8em;
+    line-height: 1.8;
+}
+
+.route-title{
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+    background-color: #DDA54F;
+}
+
+.btn-more{
+    text-align: right;
+}
+
+.route-number{
+    top: 200px;
+    left: 20px;
+    position: absolute;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.route-list li:hover{
+    background-color: #DDA54F;
+    transform: scale(1.03);
+    transition: all 0.5s ease 0s;
+}
+.route-list li:hover .route-content{
+   color: #fff;
+}
+
+.route-list li:hover .btn-more a{
+    color: #fff;
+ }
+
+ .route-list li:hover .route-title{
+    color: #fff;
+    background-color: #000000;
+ }
+
+
+
+ /* 網站導覽 */
+
+ .guide-content{
+     display: flex;
+     flex-wrap: wrap;
+     margin-bottom: 40px;
+ }
+
+ .guide{
+     margin-top: 40px;
+     margin-right: 10%;
+     width: 40%;    
+ }
+
+ .guide li{
+     line-height: 1.5;
+ }
+
+ .title-guide{
+     font-size: 1.3em;
+     color: #DD9933;
+     padding-bottom: 10px;
+     margin-bottom: 20px;
+     border-bottom: 1px solid #DD9933;
+ }
+
+ /* 政府宣告 */
+
+ .declare-title{
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #DD9933;
+    border-bottom: 1px solid  #DD9933;
+    margin-bottom: 20px;
+}
+
+.content-declare p{
+    line-height:1.8;
+    font-weight: 300;
+}
+
+/* 公共藝術審議會委員 */
+
+.content-member{
+    width: 1200px;
+    text-align: center;
+}
+
+.content-member table{
+    border-collapse:separate; 
+    border-spacing:0px 5px;
+}
+
+.column1,.column2,.column3{
+    padding:17px 0;
+    
+}
+
+.column1{
+    color: #fff;
+    width:30%;
+    background-color: #A0A0A0;
+}
+.column2{
+    width: 30%;
+    background-color: #F2F2F2;
+}
+.column3{
+    color: #fff;
+    width: 568px;
+    background-color: #A0A0A0;
+}
+
+.table-title1,.table-title2,.table-title3{
+    padding: 17px 0;
+    color: #fff;
+}
+.table-title1,.table-title3{
+    background-color: #6BADCB;
+}
+.table-title2{
+    background-color: #9FC7D9;
+}
+
+
+/* 作品欣賞路線 */
+
+.apprciation-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.artname{
+    font-size: 1.25em;
+    margin-bottom: 10px;
+}
+.artist{
+    color: #DDA54F;
+    font-size: .8em;
+    font-weight: 400;
+    line-height:1.5;
+}
+
+.gps{
+    padding: 8px 15px;
+    border: 1px solid #DDA54F;
+  
+    border-radius: 20px;
+}
+
+.gps img{
+    margin-right: 10px;
+}
+
+.gps p{
+    color: #DDA54F;
+    font-size: .8em;
+}
+
+.gps a{
+    display: flex;
+    align-items: center;
+}
+
+.art-desc{
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.art-desc li{
+    
+    display: flex;
+    align-items: center;
+    padding:10px 0;
+    margin-right: 25px;
+}
+
+.art-desc p{
+    font-size: .8em;
+}
+
+.art-desc img{
+    margin-right: 10px;
+}
+
+
+.art-article{
+    line-height: 2;
+    margin-bottom: 40px;
+}
+
+/* 作品欣賞內頁 */
+
+.material-desc{
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+    display: flex;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+
+.material-desc li{
+   display: flex;
+   font-size: .8em;
+   align-items: center
+}
+.material-desc img{
+    margin-right: 10px;
+}
+
+.table-art{
+    margin-bottom: 40px;
+}
+
+.table-art th{
+    padding: 10px 0;
+    border: 1px solid  #707070 ;
+    background-color: #707070;
+    color: #fff;
+    width: 168px;
+    text-align:center;
+}
+.table-art td{
+    
+    border: 1px solid  #707070 ;
+    width: 380px;
+    padding-left: 10px;
+}
+
